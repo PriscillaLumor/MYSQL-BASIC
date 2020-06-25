@@ -9,7 +9,8 @@ SELECT name, platform, year FROM videogamesales WHERE year>='1990' AND year<='20
 -- Opdracht 5
 SELECT name, platform, global_sales FROM videogamesales WHERE Global_Sales ORDER BY global_sales DESC
 -- Opdracht 6 
-SELECT AVG(genre) AS `puzzle` FROM videogamesales WHERE EU_sales
+
+SELECT AVG(EU_SALES) from videogamesales where genre = "puzzle"
 -- Opdracht 7 
 SELECT name, genre, publisher, MIN(JP_Sales) AS `Japanse versies verkocht` FROM videogamesales
 -- Opdracht 8
